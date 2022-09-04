@@ -6,8 +6,8 @@ This repo contains a GitHub template for a complete Python project with support 
 - using separate requirements files for project and dev dependencies
 - installing the project as a local _editable_ package to easily import it in any test
   file without having to use `sys.path.append()`
-- efficiently working in [Gitpod](https://gitpod.io) with a pre-configured `gitpod.yml`
-and pre-builds
+- efficiently working in [Gitpod](https://gitpod.io) with a pre-configured
+  `[gitpod. yml`](gitpod.yml) file and pre-builds
 - using [black](https://black.readthedocs.io/en/stable/) for code formatting
   manually and/or via [pre-commit](https://pre-commit.com) and/or with a GitHub
   Actions workflow that checks the code formatting at each push and pull-request on the
@@ -15,8 +15,8 @@ and pre-builds
 - using GitHub actions workflows to:
   - parse the title of each pull request on the `main` branch and extract new version
     number (`v*.*.*`)
-  - check that the `CHANGELOG.md` file has been updated with the new version number
-  - check that the `setup.py` file has been updated with the new version number
+  - check that the [`CHANGELOG.md`](CHANGELOG.md) file has been updated with the new version number
+  - check that the [`setup.py`](setup.py) file has been updated with the new version number
   - create a git tag on `main` once the pull-request is merged
 
 This is a list of the current features implemented, more will come with time.

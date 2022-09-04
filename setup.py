@@ -1,12 +1,23 @@
+# Copyright (c) Tudor Oancea, 2022
+
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+with open("requirements.txt", "r") as fh:
+    requirements = fh.read().splitlines()
+    # remove lines that start with #
+    requirements = [r for r in requirements if not r.startswith("#")]
+
 setup(
-    name="gitpod_template",
+    name="python_boilerplate",
     version="1.0.0",
-    description="",
     url="",
-    author="",
+    author="Tudor Oancea",
     license="MIT",
+    description="Boilerplate code for a Python project suited to my needs",
+    long_description=long_description,
     classifiers=[
         "Development Status :: 1 - Planning",
         # "Development Status :: 2 - Pre-Alpha",
@@ -18,6 +29,6 @@ setup(
         "Programming Language :: Python :: 3",
         "Private :: Do Not Upload",
     ],
-    packages=find_packages(include=["gitpod_template"]),
-    install_requires=["numpy"],
+    packages=find_packages(include=["python_boilerplate"]),
+    install_requires=requirements,
 )

@@ -2,15 +2,7 @@
 
 tasks:
   - name: Install dependencies
-    init: |
-      python3 -m venv venv
-      source venv/bin/activate
-      python3 -m pip install --upgrade pip
-      pip3 install -r requirements-dev.txt
-      pip3 install -U black pre-commit
-      pre-commit install
-      git submodule update --init --recursive
-      pip3 install -e .
+    init: bash setup_workspace.sh
 
 github:
   prebuilds:

@@ -1,3 +1,6 @@
+# v1.0.2
+forgot to call `setup_workspace.sh` script in `.gitpod.yml` file.
+
 # v1.0.1
 forgot to include a separate pip install for requirements.txt
 

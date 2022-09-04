@@ -1,3 +1,5 @@
+# Copyright (c) Tudor Oancea, 2022
+
 name: Check the correct version is written in CHANGELOG.md and setup.py
 on:
   pull_request:

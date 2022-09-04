@@ -12,7 +12,7 @@ with open("requirements.txt", "r") as fh:
 
 setup(
     name="python_boilerplate",
-    version="1.0.1",
+    version="1.0.2",
     url="",
     author="Tudor Oancea",
     license="MIT",

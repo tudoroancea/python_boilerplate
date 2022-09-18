@@ -1,3 +1,6 @@
+# v2.0.0
+abanndoned git submodules and switched to a full pip based dependency system.
+
 # v1.0.2
 forgot to call `setup_workspace.sh` script in `.gitpod.yml` file.
 

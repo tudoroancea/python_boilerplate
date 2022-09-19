@@ -8,11 +8,15 @@ with open("README.md", "r") as fh:
 with open("requirements.txt", "r") as fh:
     requirements = fh.read().splitlines()
     # remove lines that start with #
-    requirements = [r for r in requirements if not r.startswith("#")]
+    requirements = [
+        r
+        for r in requirements
+        if not (r.startswith("#") or r.startswith("-e git+") or r.startswith("git+"))
+    ]
 
 setup(
     name="python_boilerplate",
-    version="2.0.1",
+    version="2.0.2",
     url="",
     author="Tudor Oancea",
     license="MIT",

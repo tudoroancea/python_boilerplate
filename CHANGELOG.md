@@ -1,3 +1,6 @@
+# v2.0.1
+Fixed bug in `.gitpod.yml` that called `setup_workspace.sh` with the right path.
+
 # v2.0.0
 abanndoned git submodules and switched to a full pip based dependency system.
 

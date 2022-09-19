@@ -18,12 +18,12 @@ jobs:
             def check_versions(lines):
               faulty_lines = []
               for line in lines:
-                if "-e" not line:
+                if "-e" not in line:
                   faulty_lines.append("Dependency not specified with -e for {}".format(line))
                 if "@" not in line:
                   faulty_lines.append("No version specified for line {}".format(line))
                   exit(1)
-                if "@v not in line:
+                if "@v" not in line:
                   faulty_lines.append("No git tag specified for line {}".format(line))
 
               for line in faulty_lines:
